@@ -1,0 +1,4386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Map -->
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' />
+    
+    <!-- Title -->
+    <title>Menu: Royal Galaxy Dhaba</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-togglable fixed-top">
+      <div class="container">
+    
+        <!-- Navbar brand (mobile) -->
+        <a class="navbar-brand d-lg-none" href="./index.html">Royal Galaxy Dhaba</a>
+    
+        <!-- Navbar toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <a class="navbar-brand d-none d-lg-flex" href="./index.html">
+            Royal Galaxy Dhaba
+          </a>
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./index.html">Home</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link active" href="./menu.html">Menu</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link " href="./contact-us.html">Contact</a>
+            </li>                      
+          </ul>
+    
+          <!-- Navbar brand -->
+          
+    
+          <!-- 
+          <ul class="navbar-nav">        
+            <li class="nav-item">
+              <a class="nav-link " href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./contact-us.html">Contact</a>
+            </li>
+          </ul>
+           -->
+    
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header data-jarallax data-speed=".8" style="background-image: url(assets/img/tabd.jpeg);">
+      <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black-50">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+
+              <!-- Heading -->
+              <h1 class="display-6 fw-bold text-white">
+                Our menu
+              </h1>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MENU -->
+    <section class="py-7 py-md-9 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-2">
+              Browse by categories
+            </h2>
+
+          
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <!-- Navigation -->
+            <div class="nav justify-content-center mb-6" id="menuTabs" role="tablist">
+              <a class="nav-link active" id="bfTab" data-bs-toggle="tab" href="#bf" role="tab" aria-controls="bf" aria-selected="true">
+                Breakfast
+              </a>
+              <a class="nav-link" id="lunchTab" data-bs-toggle="tab" href="#snacks" role="tab" aria-controls="snacks">
+                Snacks
+              </a>
+              <a class="nav-link" id="soupTab" data-bs-toggle="tab" href="#soup" role="tab" aria-controls="soup">
+                Soup                      
+              </a>              
+              <a class="nav-link" id="vegTab" data-bs-toggle="tab" href="#veg" role="tab" aria-controls="veg">
+                Veg Mains
+              </a>
+              <a class="nav-link" id="nvegTab" data-bs-toggle="tab" href="#nveg" role="tab" aria-controls="nveg">
+                Non-Veg
+              </a>
+              <a class="nav-link" id="chineseTab" data-bs-toggle="tab" href="#chinese" role="tab" aria-controls="chinese">
+                Chinese
+              </a>
+              <a class="nav-link" id="tandooriTab" data-bs-toggle="tab" href="#tandoori" role="tab" aria-controls="tandoori">
+                Tandoori
+              </a>
+              <a class="nav-link" id="rrTab" data-bs-toggle="tab" href="#rr" role="tab" aria-controls="rr">
+                Rice & Roti
+              </a>
+              <a class="nav-link" id="thaliTab" data-bs-toggle="tab" href="#thali" role="tab" aria-controls="thali">
+                Thali
+              </a>             
+              <a class="nav-link" id="raitaTab" data-bs-toggle="tab" href="#raita" role="tab" aria-controls="raita">
+                Raita
+              </a>
+              
+              <a class="nav-link" id="saladTab" data-bs-toggle="tab" href="#salad" role="tab" aria-controls="salad">
+                Salads
+              </a>
+              <a class="nav-link" id="beveragesTab" data-bs-toggle="tab" href="#beverages" role="tab" aria-controls="beverages">
+                Beverages
+              </a>                            
+              <a class="nav-link" id="dessertsTab" data-bs-toggle="tab" href="#desserts" role="tab" aria-controls="desserts">
+                Desserts
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+
+
+          <!-- BREAKFAST-->
+          <div class="tab-content" id="bfContent">
+            <div class="tab-pane fade show active" id="bf" role="tabpanel" aria-labelledby="bfTab">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Aloo Parantha</h5>
+
+                        <!-- Text -->
+                        <p class="mb-0">                          
+                        </p>
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          30
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Parantha</h5>
+
+                        <p class="mb-0">
+                          Gobhi/Onion/Mooli/Lachcha
+                        </p>
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          40
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Paneer Parantha</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                         60
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                        <!-- Image 
+                        <div class="ratio ratio-1x1">
+                          <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
+                        </div>
+                        -->
+
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Plain Parantha</h5>
+
+                        <!-- Text -->
+                        <p class="mb-0">
+                          
+                        </p>
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          25
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                   
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Poori Bhaji</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          90
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Plain Poori</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          30
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                    
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Chana Bhatura</h5>
+
+                        <!-- Text -->
+                         <!-- Text -->
+                        <!--
+                         <p class="mb-0">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                        </p>
+                        --> 
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          120
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Plain Bhatura</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          30
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Butter Toast</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          60
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">French Toast</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          80
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Mushroom on Toast</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          100
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                    
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Jam Toast </h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          60
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Sandwich: Veg/Egg</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          80
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                   
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Cheese Sandwich</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          100
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+
+                        <!-- Image -->
+                        
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Cheese Garlic Sandwich</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          90
+                        </div>
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Chicken Sandwich</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          120
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                  
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Omlette</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          90
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Spanish Omlette</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          100
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Boiled Eggs</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          40
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Egg Bhurji</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          70
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Scrambled Eggs</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          70
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                  
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Poached Eggs</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          70
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                    
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Plain Slice</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          10
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Butter</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          30/50/80
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Jam</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          40/70
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+
+            
+
+
+
+          <!--Veg-->
+          <div class="tab-pane fade show " id="veg" role="tabpanel" aria-labelledby="vegTab">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Paneer Butter Masala</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">                          
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Paneer Bhurji</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Shahi Paneer</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                       220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+ <!-- Image                     <div class="col-3 align-self-center">
+
+                     
+                      <div class="ratio ratio-1x1">
+                        <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
+                      </div>
+                      
+
+                    </div>-->
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Kadhai Paneer</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Palak Paneer</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Matar Paneer</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Paneer Tikka</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        275
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Cheese Tomato</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Palak Mushroom</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Mushroom Masala</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        220
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Matar Mushroom</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Palak Matar</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chana Masala </h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        160
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Malai Kofta</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Kofta</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        160
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Matar Masala</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Gobhi Masala</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        160
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Aloo Matar</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        140
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Aloo Gobhi</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        140
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Zeera Aloo</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        120
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+               
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Dum Aloo</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Mix Veg</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        140
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Kadhi Pakoda</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        120
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Kheru</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Rajmah</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Dal Makhani</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        120
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Yellow Dal</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <!--Non-Veg-->
+          <div class="tab-pane fade show " id="nveg" role="tabpanel" aria-labelledby="nvegTab">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+              
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Butter Chicken</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">                          
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Kadhai Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Rada Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Curry</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chilli Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Garlic Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tandoori Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        275/500
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Tikka</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        300/500
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Manchurian</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken 65</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        350
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Egg Curry</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+                                                  
+            </div>
+          </div>
+
+
+
+
+
+          <!--Chinese-->
+          <div class="tab-pane fade show " id="chinese" role="tabpanel" aria-labelledby="chineseTab">
+            <div class="row">
+              
+              
+              
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chilli Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Garlic Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250/480
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Manchurian</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken 65</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        350
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Chowmein</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+               
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Egg Chowmein</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        130
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chilli Cheese</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        230
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Manchurian</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        130
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+              
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Gobhi Manchurian</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Paneer 65</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Chowmein</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Hakka Noodles</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        140
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                                                  
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <!--Raita-->
+          <div class="tab-pane fade show " id="raita" role="tabpanel" aria-labelledby="raitaTab">
+            <div class="row">
+              
+              
+              
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Boondi Raita</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+               
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Mix Veg Raita</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Cucumber Raita</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+              
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Pudina Raita</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+               
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Plain Curd</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+                                                  
+            </div>
+          </div>
+
+
+
+
+
+
+           <!--Salads-->
+           <div class="tab-pane fade show " id="salad" role="tabpanel" aria-labelledby="saladTab">
+            <div class="row">
+ 
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Green Salad</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Cucumber Salad</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Onion Salad</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        50
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+                                                  
+            </div>
+          </div>
+
+
+
+
+           <!--Desserts-->
+           <div class="tab-pane fade show " id="desserts" role="tabpanel" aria-labelledby="desertsTab">
+            <div class="row">
+ 
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Ice Cream</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        Butterscotch, Vanilla
+                      </p>
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Rice Kheer</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Gulab Jamun</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      
+                       <p class="mb-0">
+                        2 pieces
+                      </p>
+                     
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        60
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Vermicelli/Seviyan</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Gulab Jamun & Ice Cream</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+
+                                                  
+            </div>
+          </div>
+
+
+
+
+
+           <!--RiceRoti-->
+           <div class="tab-pane fade show " id="rr" role="tabpanel" aria-labelledby="rrTab">
+            <div class="row">
+              
+              
+              
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Biryani</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        180
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Egg Biryani</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Biryani</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        250
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Pulao</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Matar Pulao</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Zeera Rice</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Plain Rice</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Fried Rice</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Egg Fried Rice</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        160
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Fried Rice</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        200
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tawa Roti</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        10
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tawa Butter Roti</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        15
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tandoori Roti</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        15
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tandoori Parantha</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        40
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Plain Naan</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        40
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+              
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Butter Naan</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        50
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Garlic Naan</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        60
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div><div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+              
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Lachcha Parantha</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        40
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+             
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Missi Roti</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        On Order
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        30
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                                                  
+            </div>
+          </div>
+
+
+
+
+
+          <!--Thali-->
+          <div class="tab-pane fade show " id="thali" role="tabpanel" aria-labelledby="thaliTab">
+            <div class="row">
+              
+              
+              
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Regular Thali</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        Seasonal Veg, Dal, Rice, Chapati, Salad, Pickle
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Special Thali</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        Paneer, Seasonal Veg, Dal, Rice, Chapati, Salad, Pickle
+                      </p>
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        150
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+               
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Deluxe Thali</h5>
+
+                      Paneer, Seasonal Veg, Dal, Rice, Chapati, Raita, Papad, Salad, Pickle
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        180
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+                                        
+                                                  
+            </div>
+          </div>
+
+
+
+
+          <!--Tandoori-->
+          <div class="tab-pane fade show " id="tandoori" role="tabpanel" aria-labelledby="tandooriTab">
+            <div class="row">
+              
+              
+              
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tandoori Chicken</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        275/500
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Tikka</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        300/500
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Paneer Tikka</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        275
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+                                        
+                                                  
+            </div>
+          </div>
+
+
+
+
+          <!--Beverages-->
+          <div class="tab-pane fade show " id="beverages" role="tabpanel" aria-labelledby="beveragesTab">
+            <div class="row">
+              
+              
+              
+            
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tea</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        20
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Black Tea</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        20
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>             
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Lemon Tea</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        20
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Lemon Tea</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        20
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Green Tea</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        50
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Ginger Lemon Honey</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        60
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Hot Coffee</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        50
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Cold Coffee</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        60
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Cold Coffee with Ice Cream</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Milk</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        30
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Lassi</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      
+                       <p class="mb-0">
+                        Sweet or Salty
+                      </p>
+                      
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        60
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Lemon Soda</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        40
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Plain Soda</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        30
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Mango Shake</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                  
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Banana Shake</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      <!--
+                       <p class="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                      </p>
+                      --> 
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Soft Drink</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                      
+                       <p class="mb-0">
+                        Coke, Limca, Fanta, Maaza
+                      </p>
+                     
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        40
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                 
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Juice</h5>
+
+                      <!-- Text -->
+                       <!-- Text -->
+                     
+                       <p class="mb-0">
+                        Guava, Orange, Mixed Fruit
+                      </p>
+                     
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+                                        
+                                                  
+            </div>
+          </div>
+
+
+
+
+
+
+            <!--Snacks-->
+            <div class="tab-pane fade show" id="snacks" role="tabpanel" aria-labelledby="snacks">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                    
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Paneer Pakoda</h5>
+
+                        <!-- Text -->
+                        <p class="mb-0">                          
+                        </p>
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          150
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                    
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Veg Pakoda</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          100
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                   
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Bread Pakoda</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                         90
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                  
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">French Fries</h5>
+
+                        <!-- Text -->
+                        <p class="mb-0">
+                          
+                        </p>
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          80
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                    
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Cheese Fingers</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          160
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                    
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Veg Cutlet</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          130
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Paneer Cutlet</h5>
+
+                        <!-- Text -->
+                         <!-- Text -->
+                        <!--
+                         <p class="mb-0">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.
+                        </p>
+                        --> 
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          150
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Chicken Cutlet</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          230
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Bread Roll</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          100
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Chicken Pakoda</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          220
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Egg Pakoda</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          100
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Aloo Chaat </h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          80
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Chana Chaat</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          100
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Papad Roast</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          10
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Papad Fry</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          15
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                     
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Papad Masala</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          20
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="py-3 border-bottom">
+                    <div class="row">
+                      
+                      <div class="col-7">
+
+                        <!-- Heading -->
+                        <h5 class="mb-2">Fresh Cheese</h5>
+
+                        <!-- Text -->
+                        
+
+                      </div>
+                      <div class="col-2">
+
+                        <!-- Price -->
+                        <div class="fs-4 font-serif text-center text-black">
+                          150
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+               
+               
+               
+                
+             
+                
+              </div>
+            </div>
+
+          
+     
+
+
+
+
+
+
+
+          <!--Soup-->
+          <div class="tab-pane fade show" id="soup" role="tabpanel" aria-labelledby="soup">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Hot & Sour Soup</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">                          
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Hot & Sour Soup</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Veg Soup</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                       80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Sweet Corn Soup</h5>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        
+                      </p>
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                    
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Tomato Soup</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        80
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="py-3 border-bottom">
+                  <div class="row">
+                   
+                    <div class="col-7">
+
+                      <!-- Heading -->
+                      <h5 class="mb-2">Chicken Soup</h5>
+
+                      <!-- Text -->
+                      
+
+                    </div>
+                    <div class="col-2">
+
+                      <!-- Price -->
+                      <div class="fs-4 font-serif text-center text-black">
+                        100
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            
+          </div>
+
+
+
+
+
+        
+          
+       
+
+
+          
+
+        </div>
+      </div>
+    </section>
+
+  
+
+
+
+    <!-- FOOTER -->
+    <footer class="py-7 py-md-9 bg-black">
+      <div class="container px-4">
+        <div class="row gx-7">
+         
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">
+              Contact info
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled mb-6">
+              <li class="d-flex mb-2">
+                <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+                Medical College Road (Tanda-53 Mile Road)<br/>
+                  Tanda, Distt. Kangra (H.P.)<br/>
+                  176001
+              </li>
+              <li class="d-flex mb-2">
+                <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+                <a href="tel:+917876408602">+91 7876408602</a>            
+              </li>
+              <li class="d-flex">
+                <div class="far fa-envelope me-3 mt-2 fs-sm"></div> <a href="mailto:info@royalgalaxydhaba">info@royalgalaxydhaba</a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">
+              Opening hours
+            </h5>
+    
+            <!-- Text -->
+            <div class="mb-3">
+              <div class="text-xs">All Days</div>
+              <div class="font-serif">7:00 AM - 11:00 PM</div>
+            </div>
+    
+            
+    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+    
+            <!-- Copyright -->
+            <div class="d-flex align-items-center">
+              <hr class="hr-sm me-3" style="height: 1px;" /> &copy; 2022 Royal Galaxy Dhaba. All rights reserved.
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <!--  -->
+    <!-- TOAST -->
+    <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3 mb-md-5" id="notification" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+  </body>
+</html>
